@@ -1,0 +1,30 @@
+{
+  "name": "PersonManager",
+  "version": "1.0.0",
+  "homepage": "./",
+  "build": {
+    "productName": "108Farm",
+    "appId": "org.Pm.desktop",
+    "directories": {
+      "output": "build"
+    },
+    "files": [
+      "resource/*",
+      "msg/*",
+      "dist/electron/*"
+    ]
+  },
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "electron-packager . PersonManager --platform=win32 --arch=x64 --prune --electronVersion=8.0.1"
+  },
+  "author": "Tsuchiya",
+  "license": "BSD",
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
+    "fs": "0.0.1-security",
+    "jquery": "^3.4.1"
+  }
+}

@@ -1,0 +1,12 @@
+﻿[name] 様
+
+template2 [keika] です。
+
+// 定数
+const BUFF_SIZE = 100;    // バッファーのサイズ
+const BUFF_POS  = 0;      // バッファーの保存開始位置
+const READ_SIZE = 3;      // 読み取るサイズ
+const READ_POS  = 0;      // 読み取り開始位置
+
+// モジュール
+const fs = require("fs");

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>PersonManager</title>
+
+    <link href="../css/core/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/app/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-primary">
+            <a class="navbar-brand" href="#!">PersonManager</a>
+            <!--button type="button" class="btn btn-danger" id="clearbtn">CLEAR</button-->
+            <div class="custom-file">
+                <input type="file" class="custom-file-input" id="customFile">
+                <label class="custom-file-label" for="customFile">Excelファイルを選択...</label>
+            </div>
+            <button type="button" class="btn btn-success" id="updatetable">データ更新</button>
+        </nav>
+    </header>
+    <div class="container">
+        <div>
+            <h5 id="nowdate"></h5>
+            <h5 id="dataview"></h5>
+        </div>
+        <div class="tablewindow">
+            <table class="table table-bordered">
+                <thead class="thead-light">
+                    <tr>
+                        <th>ID</th>
+                        <th>名前</th>
+                        <th>登録日</th>
+                        <th>参加プラン</th>
+                        <th>課金経過</th>
+                        <th>時間経過</th>
+                        <th>最終メッセージ送信日</th>
+                        <th>メッセージ作成</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <div class="container" id="footer">
+            <button type="button" class="btn btn-success" id="updatetable">データ更新</button>
+            
+        </div>
+
+    </div>
+    <!-- script>window.jQuery = window.$ = require('../js/core/jquery-3.4.1.min.js'); </script-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.11.19/xlsx.full.min.js"></script>
+    <script src="../js/app/excelRead.js"></script>
+    <script src="../js/app/initmain.js"></script>
+    <script src="../js/app/createMsg.js"></script>
+    <script src="../js/app/updataSystem.js"></script>
+    <!--script src="../js/app/clear.js"></script-->
+</body></html>

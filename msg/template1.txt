@@ -1,0 +1,7 @@
+﻿[name] 様
+
+template1 [keika] です。
+
+[name] 様
+
+[name] 様[name][name][keika]
